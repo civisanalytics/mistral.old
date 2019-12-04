@@ -351,6 +351,7 @@ class PythonAction(Action):
 
             exc_ctx['workflow_execution_id'] = wf_ex.id
             exc_ctx['task_execution_id'] = self.task_ex.id
+            exc_ctx['task_name'] = self.task_ex.name
             exc_ctx['workflow_name'] = wf_ex.name
 
         if self.action_ex:
