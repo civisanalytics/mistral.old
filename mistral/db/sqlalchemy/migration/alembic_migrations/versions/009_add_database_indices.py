@@ -218,3 +218,10 @@ def upgrade():
         ['scope'],
         unique=False
     )
+
+    op.create_index(
+        'action_executions_v2_workflow_name',
+        'action_executions_v2',
+        ['worklow_name'],
+        unique=False
+    )
