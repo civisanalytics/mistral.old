@@ -17,6 +17,6 @@ def upgrade():
     op.create_index(
         'action_executions_v2_workflow_name',
         'action_executions_v2',
-        ['worklow_name'],
+        ['workflow_name'],
         unique=False
     )
